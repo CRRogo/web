@@ -179,6 +179,14 @@
   animation: makeItfadeIn 123s 1s forwards linear;
 }
 
+.buttonLoad:hover{
+  border: 1px solid #156e56;
+  display: block;
+  background: linear-gradient(to right, #22e3af 50%, transparent 0);
+  background-size: 200% 100%;
+  background-position: right;
+}
+
 @keyframes makeItfadeIn {
   100% {
     background-position: left;
@@ -219,14 +227,13 @@
 
       await wait(1000);
       await loadingPattern(load1);
-
       await wait(1000);
       await loadingPattern(load2);
       await wait(1000);
       await loadingPattern(load3);
       await wait(2500);
-
       prButton.classList.remove("disabled");
+
 
     }
 
